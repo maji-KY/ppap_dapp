@@ -1,0 +1,100 @@
+{
+  "version": "eosio::abi/1.0",
+  "structs": [
+    {
+      "name": "join",
+      "base": "",
+      "fields": [
+        {
+          "name": "player",
+          "type": "name"
+        },
+        {
+          "name": "master",
+          "type": "name"
+        },
+        {
+          "name": "player_name",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "leave",
+      "base": "",
+      "fields": [
+        {
+          "name": "player",
+          "type": "name"
+        },
+        {
+          "name": "master",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "bet",
+      "base": "",
+      "fields": [
+        {
+          "name": "player",
+          "type": "name"
+        },
+        {
+          "name": "master",
+          "type": "name"
+        },
+        {
+          "name": "card",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
+      "name": "playercard",
+      "base": "",
+      "fields": [
+        {
+          "name": "player",
+          "type": "name"
+        },
+        {
+          "name": "master",
+          "type": "name"
+        },
+        {
+          "name": "player_name",
+          "type": "string"
+        },
+        {
+          "name": "card",
+          "type": "uint64"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "name": "join",
+      "type": "join"
+    },
+    {
+      "name": "leave",
+      "type": "leave"
+    },
+    {
+      "name": "bet",
+      "type": "bet"
+    }
+  ],
+  "tables": [
+    {
+      "name": "playercard",
+      "index_type": "i64",
+      "key_names": ["master"],
+      "key_types": ["i64"],
+      "type": "playercard"
+    }
+  ]
+}

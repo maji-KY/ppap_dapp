@@ -1,0 +1,66 @@
+{
+  "name": "ppap-dapp-ui",
+  "version": "1.0.0",
+  "main": "src/main/main.tsx",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --progress --colors --hot --inline",
+    "dev": "NODE_ENV=development webpack --watch",
+    "lint": "eslint --fix --ext .js,.ts,.tsx src/main src/test/unit webpack.config.js jest.config.js",
+    "lint-check": "eslint --ext .js,.ts,.tsx src/main src/test/unit webpack.config.js jest.config.js",
+    "test": "jest --detectOpenHandles",
+    "test-changed": "jest --detectOpenHandles -o",
+    "test-watch": "jest --detectOpenHandles --watchAll",
+    "build-dev": "NODE_ENV=development webpack",
+    "build": "NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.6.1",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.32",
+    "axios": "^0.19.0",
+    "eosjs": "^20.0.3",
+    "luxon": "^1.21.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rxjs": "^6.5.3",
+    "typeless": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/luxon": "^1.21.0",
+    "@types/node": "^12.12.11",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/rx": "^4.1.1",
+    "@types/styled-components": "^4.4.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "axios-mock-adapter": "^1.17.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "fast-check": "^1.19.0",
+    "file-loader": "^4.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.1.0",
+    "style-loader": "^1.0.0",
+    "ts-jest": "^25.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "engines": {
+    "node": ">= 12.6.0",
+    "npm": ">= 6.9.0"
+  },
+  "sideEffects": true,
+  "private": true,
+  "jest": {
+    "transform": {}
+  }
+}

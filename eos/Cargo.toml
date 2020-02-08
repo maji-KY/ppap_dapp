@@ -1,0 +1,16 @@
+[package]
+name = "ppap"
+version = "0.1.0"
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+doc = false
+
+[dependencies]
+eosio = "0.3.0"
+eosio_cdt = "0.3.0"
+
+[profile.release]
+lto = true

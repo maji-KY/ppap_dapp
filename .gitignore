@@ -1,0 +1,12 @@
+.idea
+.vscode
+.DS_Store
+*.log
+*.wasm
+
+node_modules
+dist
+public
+coverage
+
+target

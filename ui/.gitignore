@@ -1,0 +1,10 @@
+.idea
+.vscode
+.DS_Store
+node_modules
+*.log
+
+dist
+public
+coverage
+storybook-static/

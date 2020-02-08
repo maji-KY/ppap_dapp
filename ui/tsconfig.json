@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUnusedLocals" : true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": false,
+    "downlevelIteration": true,
+    "outDir": "./dist/",
+    "baseUrl": "src/main",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es2017"],
+    "esModuleInterop": true,
+    "module": "esNext",
+    "target": "es2017",
+    "jsx": "react"
+  },
+  "exclude": [
+    "node_modules",
+    "functions"
+  ]
+}
