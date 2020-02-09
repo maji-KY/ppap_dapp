@@ -76,7 +76,7 @@ export default function Top() {
         });
         const rows = resp.rows;
         rows.forEach(x => console.log(x));
-        display.innerText = rows.map(x => `${x.player_name}(${x.player}): ${x.card}`).join("\n");
+        display.innerHTML = rows.map(x => `${x.player_name}(${x.player}): ${x.card}`).join("&#13;&#10;");
       }}>Fetch Board</Button>&nbsp;
       <Button color="primary" variant="contained" onClick={async () => {
         const result = await client.api!.transact({
